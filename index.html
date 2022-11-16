@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarpZone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+
+        <div class="div_menu">
+            <img src="img/warp_logo.png" alt="" class="img_logo">
+            <ul class="lista_menu">
+                <li class="img_menu"></li>
+                <li class="item_menu"> <a href=".">Loja</a> </li>
+                <li class="item_menu">Materiais</li>
+                <li class="item_menu">Noticias</li>
+                <li class="item_menu">Podcasts</li>
+            </ul>
+            <div class="search_responsive">
+                <a href="#" class="search_link">
+                    <img src="img/search_icon.png" alt="" class="img_icon">
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="carrossel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/games_news.png" alt=""> <h3>Playstation 1</h3></div>
+                  <div class="swiper-slide"><img src="img/games_news2.jpg" alt=""> <h3></h3></div>
+                  <div class="swiper-slide"><img src="img/games_news3.jfif" alt=""> </div>
+                  <div class="swiper-slide"><img src="img/games_news4.jfif" alt=""> </div>
+                  <div class="swiper-slide"><img src="img/games_news5.jfif" alt=""> </div>
+                  <div class="swiper-slide"><img src="img/games_news6.jfif" alt=""> </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+          <div class="title_materiais">
+            <h1>Materiais >></h1>
+        </div>
+        <div class="swiper mySwipe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/console.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="img/console2.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="img/console3.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="img/console4.jfif" alt=""></div>
+              <div class="swiper-slide"><img src="img/console5.jfif" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="title_podcasts">
+            <h1>Podcasts >></h1>
+        </div>
+        <div class="carrosel3">
+            <div class="swiper mySwipe">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=JLSbqvT1EkA"><img src="img/podcast.jfif" alt=""></a></div>
+                  <div class="swiper-slide"><img src="img/podcast2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/podcast3.jfif" alt=""></div>
+                  <div class="swiper-slide"><img src="img/podcast4.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo_footer">
+          <img src="img/warp_logo.png" alt="">
+        </div>
+        <div class="contato">
+          <p>Contato: <a href="#">contato@warpzone.me</a></p>
+        </div>
+        <ul class="footer_list">
+          <li class="footer_element"><a href="https://pt-br.facebook.com/warpzoneme/"><img src="img/png_face.png" alt=""></a></li>
+          <li class="footer_element"><a href="https://www.instagram.com/warpzoneme/"><img src="img/insta_logo.png" alt=""></a></li>
+          <li class="footer_element"><a href="https://twitter.com/WarpZoneMe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/twiter_logo.png" alt=""></a></li>
+          <li class="footer_element"><a href="https://www.youtube.com/channel/UCvUsNC0JnCUVdnyON5uZU2w"><img src="img/youtube_logo.png" alt=""></a></li>
+        </ul>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwipe", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+
+</html>
